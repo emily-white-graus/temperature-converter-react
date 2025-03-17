@@ -1,4 +1,3 @@
-// Temperature converter component
 import React, { useState } from 'react';
 
 function TemperatureConverter() {
