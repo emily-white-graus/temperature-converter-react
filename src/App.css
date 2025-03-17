@@ -1,38 +1,63 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Courier New', monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.temperature-converter {
+  background-color: #c0c0c0;
+  border: 3px outset #ffffff;
+  padding: 0;
+  width: 320px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #000000;
+  background-color: #000080;
+  color: white;
+  margin: 0;
+  padding: 3px 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.converter-container {
   display: flex;
   flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+
+.input-group {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  background-color: #c0c0c0;
+  padding: 5px;
+  border: 2px inset #ffffff;
 }
 
-.App-link {
-  color: #61dafb;
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  padding: 4px;
+  border: 2px inset #ffffff;
+  border-radius: 0;
+  width: 100px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Courier New', monospace;
+}
+
+span {
+  margin-left: 5px;
+  font-weight: bold;
 }
